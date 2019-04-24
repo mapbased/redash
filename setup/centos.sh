@@ -4,10 +4,9 @@ set -eu
 
 REDASH_BASE_PATH=/home/redash/work
 
-install_docker(){
+#install_docker(){
     # Install Docker by yourself
-    
-}
+#}
 
 create_directories() {
     if [[ ! -e $REDASH_BASE_PATH ]]; then
@@ -56,7 +55,7 @@ setup_compose() {
     sudo docker-compose up -d
 }
 
-install_docker
+#install_docker
 create_directories
 create_config
 setup_compose
